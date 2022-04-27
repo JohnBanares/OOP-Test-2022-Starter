@@ -48,16 +48,33 @@ public class NematodeVisualiser extends PApplet
 	
 	public void drawNematodes()
 	{
-		for(Nematode n:nematodes)
-		{
-			if(n.getName() == "Jun")
+		
+		for(int i = 0; i<nematodes.size();i++)
+		{	
+			//if doesnt work here
+			if(nematodes.get(i).name == "Jun")
 			{
-				text(n.getName(), 400,200);
+				text(nematodes.get(i).name, 400,200);
 			}
 			else{
-				text(n.getName(), 400,700);
+				text(nematodes.get(i).name, 400,200);
 			}
 		}
+
+		//jun
+		text(nematodes.get(0).name,200,200);
+
+		circle(200, 220, 20);
+		stroke(255);
+		line(180,220,220,220);
+		
+		circle(200, 240, 20);
+		stroke(255);
+		line(180,240,220,240);
+		
+		circle(200, 260, 20);
+		stroke(255);
+		line(180,260,220,260);
 	}
 
 
@@ -75,6 +92,23 @@ public class NematodeVisualiser extends PApplet
 	public void draw()
 	{	
 		drawNematodes();
-		
+		/*
+		String name = "Jack";
+		textAlign(CENTER);
+		text(name, 400,400);*/
+		//circle(162, 184, 220);
+		//text(nematodes.name(1), 400,400);
+		//background(0);
+		/*
+		for(Nematode n:nematodes)
+		{
+			if(n.getName() == "Jun")
+			{
+				n.render(this);
+				
+				textAlign(CENTER);
+				text(n.render(this), 400,400);
+			}
+		}*/
 	}
 }

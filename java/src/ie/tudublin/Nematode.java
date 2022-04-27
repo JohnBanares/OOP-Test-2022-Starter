@@ -5,11 +5,11 @@ import processing.core.PApplet;
 
 public class Nematode {
     
-    private String name;
-    private int length;
-    private boolean limbs;
-    private String gender;
-    private boolean eyes;
+    public String name;
+    public int length;
+    public boolean limbs;
+    public String gender;
+    public boolean eyes;
 
     
 
