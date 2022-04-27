@@ -10,6 +10,14 @@ public class Nematode {
     private String gender;
     private boolean eyes;
 
+    
+
+    @Override
+    public String toString() {
+        return "Nematode [eyes=" + eyes + ", gender=" + gender + ", length=" + length + ", limbs=" + limbs + ", name="
+                + name + "]";
+    }
+
     public Nematode(TableRow tr)
     {
         this(tr.getString("name"),tr.getInt("length"), tr.getInt("limbs") == 1,tr.getString("gender"), tr.getInt("eyes") == 1);
